@@ -8,6 +8,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width:400px) {
+  body{
+   margin: none;
+   width: 90%;
+  }
+}
 #name {
   margin: 20px;
   display: flex;
@@ -27,6 +33,12 @@ body {
 header {
   display: flex;
 }
+@media (max-width:400px) {
+  header{
+   flex-direction: column;
+   margin: 10px;
+  }
+}
 li {
   margin: 16px;
   border-bottom: 1px solid;
@@ -45,6 +57,11 @@ ol {
   border: 1px solid;
   width: 50%;
 }
+@media (max-width:400px){
+  .child{
+    width:100%;
+  }
+}
 .child h4 {
   padding: 20px;
 }
@@ -56,8 +73,6 @@ ol {
 }
 #info {
   border: 1px solid;
-}
-#info {
   padding: 20px;
 }
 map {
@@ -67,15 +82,20 @@ main {
   padding: 20px;
   font-style: oblique;
 }
-button {
+#btn1,#btn2,#btn3{
+  border: 1px solid;
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
-  width: 255px;
 }
-button p {
-  color: rgb(100, 100, 7);
-  padding: 10px;
+.box {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width:400px) {
+   .box{
+    flex-direction: column;
+   }
 }
 section {
   padding: 30px;
